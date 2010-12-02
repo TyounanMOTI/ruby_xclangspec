@@ -53,7 +53,19 @@
 				require,
 			);
 			Type = "xcode.syntax.keyword";
-			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.ruby.attribute";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_[";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
+			Words = (
+				"attr_reader",
+				"attr_writer",
+				"attr_accessor",
+			);
+			Type = "xcode.syntax.attribute";
 		};
 	},
 	{
