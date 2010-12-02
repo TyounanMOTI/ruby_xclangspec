@@ -3,7 +3,7 @@
 		Identifier = "xcode.lang.ruby.constant";
 		Syntax = {
 			StartChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]:";
 			Type = "xcode.syntax.identifier.constant";
 		};
 	},
