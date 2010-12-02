@@ -1,0 +1,9 @@
+Ruby.xclangspec : Xcode syntax color highlighting for Ruby
+
+1. copy this file to
+  ~/Library/Application Support/Developer/Shared/Xcode/Specifications/
+
+2. relaunch Xcode.
+
+MIT License. http://www.opensource.org/licenses/mit-license.php
+contact: tyounan.moti@gmail.com
