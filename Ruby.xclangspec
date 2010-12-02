@@ -1,5 +1,18 @@
 (
 	{
+		Identifier = "xcode.lang.ruby.attribute";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_[";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
+			Words = (
+				"attr_reader",
+				"attr_writer",
+				"attr_accessor",
+			);
+			Type = "xcode.syntax.attribute";
+		};
+	},
+	{
 		Identifier = "xcode.lang.ruby.identifier";
 		Syntax = {
 			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_[";
@@ -53,19 +66,7 @@
 				require,
 			);
 			Type = "xcode.syntax.keyword";
-		};
-	},
-	{
-		Identifier = "xcode.lang.ruby.attribute";
-		Syntax = {
-			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_[";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
-			Words = (
-				"attr_reader",
-				"attr_writer",
-				"attr_accessor",
-			);
-			Type = "xcode.syntax.attribute";
+			AltType = "xcode.lang.ruby.identifier";
 		};
 	},
 	{
@@ -132,8 +133,8 @@
 				"xcode.lang.comment.singleline.pound",
 				"xcode.lang.string",
 				"xcode.lang.character",
-				"xcode.lang.ruby.identifier",
 				"xcode.lang.ruby.attribute",
+				"xcode.lang.ruby.identifier",
 				"xcode.lang.number",
 			);
 		};
@@ -150,8 +151,8 @@
 				"xcode.lang.ruby.module.declarator",
 				"xcode.lang.ruby.class.declarator",
 				"xcode.lang.ruby.function.declarator",
-				"xcode.lang.ruby.identifier",
 				"xcode.lang.ruby.attribute",
+				"xcode.lang.ruby.identifier",
 				"xcode.lang.number",
 			);
 		};
