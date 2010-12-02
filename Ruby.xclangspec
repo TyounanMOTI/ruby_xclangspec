@@ -1,5 +1,13 @@
 (
 	{
+		Identifier = "xcode.lang.ruby.constant";
+		Syntax = {
+			StartChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
+			Type = "xcode.syntax.identifier.constant";
+		};
+	},
+	{
 		Identifier = "xcode.lang.ruby.symbol";
 		Syntax = {
 			StartChars = ":";
@@ -149,6 +157,7 @@
 				"xcode.lang.comment.singleline.pound",
 				"xcode.lang.string",
 				"xcode.lang.character",
+				"xcode.lang.ruby.constant",
 				"xcode.lang.ruby.symbol",
 				"xcode.lang.ruby.instance_variable",
 				"xcode.lang.ruby.attribute",
@@ -169,6 +178,7 @@
 				"xcode.lang.ruby.module.declarator",
 				"xcode.lang.ruby.class.declarator",
 				"xcode.lang.ruby.function.declarator",
+				"xcode.lang.ruby.constant",
 				"xcode.lang.ruby.symbol",
 				"xcode.lang.ruby.instance_variable",
 				"xcode.lang.ruby.attribute",
@@ -198,7 +208,7 @@
 			Tokenizer = "xcode.lang.ruby.lexer";
 			Rules = (
 				module,
-				"xcode.lang.ruby.identifier",
+				"xcode.lang.ruby.identifier|xcode.lang.ruby.constant",
 			);
 			Type = "xcode.syntax.name.partial";
 		};
@@ -223,7 +233,7 @@
 			Tokenizer = "xcode.lang.ruby.lexer";
 			Rules = (
 				class,
-				"xcode.lang.ruby.identifier",
+				"xcode.lang.ruby.identifier|xcode.lang.ruby.constant",
 				"xcode.lang.ruby.superclass?",
 			);
 			Type = "xcode.syntax.name.partial";
