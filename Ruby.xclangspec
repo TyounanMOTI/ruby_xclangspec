@@ -1,5 +1,13 @@
 (
 	{
+		Identifier = "xcode.lang.ruby.symbol";
+		Syntax = {
+			StartChars = ":";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?|^&<>=~+-*/@[]";
+			Type = "xcode.syntax.identifier.type";
+		};
+	},
+	{
 		Identifier = "xcode.lang.ruby.instance_variable";
 		Syntax = {
 			StartChars = "@";
@@ -141,6 +149,7 @@
 				"xcode.lang.comment.singleline.pound",
 				"xcode.lang.string",
 				"xcode.lang.character",
+				"xcode.lang.ruby.symbol",
 				"xcode.lang.ruby.instance_variable",
 				"xcode.lang.ruby.attribute",
 				"xcode.lang.ruby.identifier",
@@ -160,6 +169,7 @@
 				"xcode.lang.ruby.module.declarator",
 				"xcode.lang.ruby.class.declarator",
 				"xcode.lang.ruby.function.declarator",
+				"xcode.lang.ruby.symbol",
 				"xcode.lang.ruby.instance_variable",
 				"xcode.lang.ruby.attribute",
 				"xcode.lang.ruby.identifier",
