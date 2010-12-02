@@ -3,7 +3,7 @@
 		Identifier = "xcode.lang.ruby.constant";
 		Syntax = {
 			StartChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]:";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?:";
 			Type = "xcode.syntax.identifier.constant";
 		};
 	},
@@ -26,8 +26,8 @@
 	{
 		Identifier = "xcode.lang.ruby.attribute";
 		Syntax = {
-			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_[";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?";
 			Words = (
 				"attr_reader",
 				"attr_writer",
@@ -39,8 +39,8 @@
 	{
 		Identifier = "xcode.lang.ruby.identifier";
 		Syntax = {
-			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_[";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?[]";
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_?";
 			Words = (
 				BEGIN,
 				END,
